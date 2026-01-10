@@ -27,6 +27,6 @@ Incluye **modo oscuro**, **highlight de búsqueda**, **skeleton loaders** y **sc
 Clona el repositorio e instala las dependencias:
 
 ```bash
-git clone <url-del-repositorio>
+git clone https://github.com/david22052005/list-of-spas-publish.git
 cd frontend-test
 npm install
