@@ -22,15 +22,6 @@ Incluye **modo oscuro**, **highlight de búsqueda**, **skeleton loaders** y **sc
 
 ---
 
-## 📦 Instalación del proyecto
-
-Clona el repositorio e instala las dependencias:
-
-```bash
-git clone https://github.com/david22052005/list-of-spas-publish.git
-cd frontend-test
-npm install
-
 
 ## 🧠 Decisiones técnicas
 
@@ -58,4 +49,15 @@ npm install
 
 - **Separación de componentes**  
   Se dividió la lógica en componentes pequeños (`PostList`, `PostFilter`, `PostModal`, etc.) para facilitar lectura, escalabilidad y testing futuro.
+
+--
+
+## 📦 Instalación del proyecto
+
+Clona el repositorio e instala las dependencias:
+
+```bash
+git clone https://github.com/david22052005/list-of-spas-publish.git
+cd frontend-test
+npm install
 
