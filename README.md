@@ -1,65 +1,41 @@
 # Frontend Test – React + Vite + Tailwind CSS
 
-Proyecto frontend desarrollado con **React** y **Vite**, utilizando **Tailwind CSS** para estilos.  
-Incluye **modo oscuro**, **highlight de búsqueda**, **skeleton loaders** y **scroll infinito** consumiendo una API pública.
+Este es un pequeño proyecto frontend que armé usando **React** y **Vite**, con **Tailwind CSS** para los estilos.  
+La idea era practicar cómo consumir una API pública mientras aplicaba buenas prácticas modernas: tiene **modo oscuro**, **búsqueda con resaltado de coincidencias**, **skeleton loaders** y **scroll infinito**.
 
-> ⚠️ **Nota importante**  
-> Tailwind CSS **ya está instalado y configurado** en el proyecto.  
-> No es necesario instalarlo manualmente.
-
----
-
-## 🚀 Tecnologías y versiones usadas
-
-- **React:** 19.2.0  
-- **React DOM:** 19.2.0  
-- **Vite:** 7.2.4  
-- **TypeScript:** 5.9.3  
-- **Tailwind CSS:** 3.4.17  
-- **PostCSS:** 8.5.6  
-- **Autoprefixer:** 10.4.23  
-- **Node.js:** 18+ (recomendado)
+> ℹ️ Nota rápida  
+> Ya dejé Tailwind CSS instalado y configurado, así que no necesitas hacer nada extra al respecto.
 
 ---
 
+## 🚀 Tecnologías que usé
 
-## 🧠 Decisiones técnicas
-
-- **React + Vite**  
-  Se eligió Vite por su arranque rápido, HMR eficiente y configuración mínima
-
-- **TypeScript**  
-  Utilizado para mejorar la mantenibilidad del código, evitar errores comunes y dejar claras las estructuras de datos
-
-- **Tailwind CSS**  
-  Permite construir una UI limpia y consistente rápidamente, evitando CSS innecesario.  
-  Se combinó con estilos base personalizados para mantener control visual global.
-
-- **Dark Mode (class strategy)**  
-  Se implementó usando la estrategia `class` de Tailwind para tener control explícito del estado del tema y evitar dependencias externas.
-
-- **Scroll infinito con IntersectionObserver**  
-  Se prefirió sobre paginación clásica para mejorar la experiencia de usuario y demostrar manejo de APIs modernas del navegador.
-
-- **Skeleton loaders**  
-  Usados en lugar de spinners para dar una percepción de carga más fluida y profesional.
-
-- **Filtro con highlight de texto**  
-  El resaltado de coincidencias se implementó de forma segura (sin `dangerouslySetInnerHTML`) para evitar problemas de XSS.
-
-- **Separación de componentes**  
-  Se dividió la lógica en componentes pequeños (`PostList`, `PostFilter`, `PostModal`, etc.) para facilitar lectura, escalabilidad y testing futuro.
-
+- React 19.2.0  
+- Vite 7.2.4 (porque arranca súper rápido y el HMR es increíble)  
+- TypeScript 5.9.3 — me ayuda a no meter la pata con tipos  
+- Tailwind CSS 3.4.17 + unos estilos base propios para mantener cierto control visual  
+- Node.js 18+ (recomendado)
 
 ---
 
-## 📦 Instalación del proyecto
+## 🧠 ¿Por qué tomé estas decisiones?
 
-Clona el repositorio e instala las dependencias:
+- **Vite en vez de Create React App**: quería algo más ágil y sin tanto boilerplate.  
+- **TypeScript**: sí, agrega un poco más de trabajo al principio, pero evita dolores de cabeza después.  
+- **Modo oscuro con la estrategia `class` de Tailwind**: así controlo el tema directamente desde el estado de la app, sin depender de librerías externas.  
+- **Scroll infinito con `IntersectionObserver`**: me pareció más fluido que botones de “cargar más”. Además, es una buena forma de practicar APIs del navegador.  
+- **Skeletons en vez de spinners**: dan la sensación de que la app ya está “armándose”, no solo esperando.  
+- **Búsqueda segura**: resalto coincidencias en título y contenido, pero sin usar `dangerouslySetInnerHTML` (¡nada de XSS!).  
+- **Componentes pequeños y separados**: `PostList`, `PostFilter`, `PostModal`… así el código es más fácil de leer, testear y escalar si crece el proyecto.
+
+---
+
+## ▶️ Cómo probarlo
+
+Clona el repo e instala las dependencias:
 
 ```bash
-git clone https://github.com/david22052005/list-of-spas-publish.git
-cd list-of-spas-publish
+git clone https://github.com/david22052005/list-of-spas-publish.git  
+cd frontend-test
 npm install
 npm run dev
-
