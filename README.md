@@ -50,6 +50,7 @@ Incluye **modo oscuro**, **highlight de búsqueda**, **skeleton loaders** y **sc
 - **Separación de componentes**  
   Se dividió la lógica en componentes pequeños (`PostList`, `PostFilter`, `PostModal`, etc.) para facilitar lectura, escalabilidad y testing futuro.
 
+
 ---
 
 ## 📦 Instalación del proyecto
