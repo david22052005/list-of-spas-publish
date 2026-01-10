@@ -26,10 +26,10 @@ Incluye **modo oscuro**, **highlight de búsqueda**, **skeleton loaders** y **sc
 ## 🧠 Decisiones técnicas
 
 - **React + Vite**  
-  Se eligió Vite por su arranque rápido, HMR eficiente y configuración mínima, ideal para pruebas técnicas donde se prioriza productividad y claridad.
+  Se eligió Vite por su arranque rápido, HMR eficiente y configuración mínima
 
 - **TypeScript**  
-  Utilizado para mejorar la mantenibilidad del código, evitar errores comunes y dejar claras las estructuras de datos (ej. `Post`).
+  Utilizado para mejorar la mantenibilidad del código, evitar errores comunes y dejar claras las estructuras de datos
 
 - **Tailwind CSS**  
   Permite construir una UI limpia y consistente rápidamente, evitando CSS innecesario.  
@@ -50,7 +50,7 @@ Incluye **modo oscuro**, **highlight de búsqueda**, **skeleton loaders** y **sc
 - **Separación de componentes**  
   Se dividió la lógica en componentes pequeños (`PostList`, `PostFilter`, `PostModal`, etc.) para facilitar lectura, escalabilidad y testing futuro.
 
---
+---
 
 ## 📦 Instalación del proyecto
 
