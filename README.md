@@ -3,7 +3,7 @@
 Este es un pequeño proyecto frontend que armé usando **React** y **Vite**, con **Tailwind CSS** para los estilos.  
 La idea era practicar cómo consumir una API pública mientras aplicaba buenas prácticas modernas: tiene **modo oscuro**, **búsqueda con resaltado de coincidencias**, **skeleton loaders** y **scroll infinito**.
 
-##Las respuestas a la preguntas realizadas se encuentran en el achivo RespuestaPreguntas.md
+## Las respuestas a la preguntas realizadas se encuentran en el achivo RespuestaPreguntas.md
 
 > ℹ️ Nota rápida  
 > Ya dejé Tailwind CSS instalado y configurado, así que no necesitas hacer nada extra al respecto.
