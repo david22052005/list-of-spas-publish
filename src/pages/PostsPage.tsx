@@ -23,9 +23,6 @@ export default function PostsPage() {
 
   const observerRef = useRef<HTMLDivElement | null>(null);
 
-  /* =====================
-     FETCH POSTS
-  ===================== */
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then(res => res.json())
@@ -36,9 +33,6 @@ export default function PostsPage() {
       .finally(() => setLoading(false));
   }, []);
 
-  /* =====================
-     FILTRO (memoizado)
-  ===================== */
   const filteredPosts = useMemo(() => {
     if (!filter) return allPosts;
 
@@ -51,9 +45,6 @@ export default function PostsPage() {
     );
   }, [filter, allPosts]);
 
-  /* =====================
-     LOAD MORE (scroll)
-  ===================== */
   const loadMore = useCallback(() => {
     const source = filter ? filteredPosts : allPosts;
     const currentLength = displayedPosts.length;
@@ -71,17 +62,11 @@ export default function PostsPage() {
     }, 500);
   }, [displayedPosts.length, filter, filteredPosts, allPosts]);
 
-  /* =====================
-     RESET AL CAMBIAR FILTRO
-  ===================== */
   useEffect(() => {
     const source = filter ? filteredPosts : allPosts;
     setDisplayedPosts(source.slice(0, ITEMS_PER_LOAD));
   }, [filter, filteredPosts, allPosts]);
 
-  /* =====================
-     INTERSECTION OBSERVER
-  ===================== */
   useEffect(() => {
     if (!observerRef.current) return;
 
@@ -98,9 +83,6 @@ export default function PostsPage() {
     return () => observer.disconnect();
   }, [loadMore, loadingMore, loading]);
 
-  /* =====================
-     RENDER
-  ===================== */
   return (
     <div className="page">
       <header className="flex items-center justify-between mb-6">

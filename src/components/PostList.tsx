@@ -7,9 +7,6 @@ interface PostListProps {
   filter: string;
 }
 
-/* =====================
-   Highlight seguro
-===================== */
 const highlightText = (text: string, query: string) => {
   if (!query) return text;
 
