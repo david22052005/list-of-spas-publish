@@ -36,6 +36,6 @@ Clona el repo e instala las dependencias:
 
 ```bash
 git clone https://github.com/david22052005/list-of-spas-publish.git  
-cd frontend-test
+cd list-of-spas-publish
 npm install
 npm run dev
